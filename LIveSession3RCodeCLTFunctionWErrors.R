@@ -1,10 +1,10 @@
 
 SampDistSampMean = function(n = 100, simulations = 1000, Dist = "Norm", mean = 0, sd = 1)
 {
-  xbar_holder = numeric(n)
+  xbar_holder = numeric(simulations)
   TheSample = numeric(n)
-  simulation = 100
-  for(i in 1:simulation)     # for loop to make "simulation" number of xbars
+  
+  for(i in 1:simulations)     # for loop to make "simulation" number of xbars
   {
     if(Dist == "Norm") TheSample = rnorm(n,mean,sd)
     if(Dist == "Uni")  TheSample = runif(n)
@@ -15,7 +15,7 @@ SampDistSampMean = function(n = 100, simulations = 1000, Dist = "Norm", mean = 0
     xbar_holder[i] = sampMean
     
   }
-  return(TheSample)   # we want to return the "simulation" number of xbars. 
+  return(xbar_holder)   # we want to return the "simulation" number of xbars. 
 }
 
 hist(SampDistSampMean())
