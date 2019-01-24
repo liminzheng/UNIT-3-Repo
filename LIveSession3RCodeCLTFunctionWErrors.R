@@ -18,5 +18,5 @@ SampDistSampMean = function(n = 100, simulations = 1000, Dist = "Norm", mean = 0
   return(xbar_holder)   # we want to return the "simulation" number of xbars. 
 }
 
-hist(SampDistSampMean())
+hist(SampDistSampMean(Dist = "Uni"))
 
