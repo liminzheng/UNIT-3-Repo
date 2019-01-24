@@ -25,5 +25,5 @@ hist(HorseLow$mpg)
 t.test(HorseHigh$mpg,HorseLow$mpg)
 ```
 
-# Write the step 6 conclusion of the t test as a comment:
-# 
+# Write the step 6 conclusion:
+There is overwhelming evdence to suggest...
