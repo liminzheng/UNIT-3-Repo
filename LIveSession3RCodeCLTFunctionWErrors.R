@@ -12,7 +12,7 @@ SampDistSampMean = function(n = 100, simulations = 1000, Dist = "Norm", mean = 0
     
     sampMean = mean(TheSample)  
     
-    xbar_holder = sampMean
+    xbar_holder[i] = sampMean
     
   }
   return(xbar_holder)   # we want to return the "simulation" number of xbars. 
